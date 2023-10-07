@@ -10,7 +10,7 @@
 
 pkgname=thunderbird-localized-beta-bin
 _pkgname=thunderbird-beta
-pkgver=118.0b6
+pkgver=128.0b1
 pkgrel=1
 pkgdesc='Standalone mail and news reader from mozilla.org — localized beta version'
 arch=('i686' 'x86_64')
@@ -72,8 +72,14 @@ _dist_checksum() {
   curl --silent --fail "${_urlbase}/SHA256SUMS" | grep "${1}/${_language}/thunderbird-${pkgver}.tar.bz2" | cut -d ' ' -f1
 }
 
-source_i686=("${_urlbase}/${_arch32}/${_language}/thunderbird-${pkgver}.tar.bz2"{,.asc})
-source_x86_64=("${_urlbase}/${_arch64}/${_language}/thunderbird-${pkgver}.tar.bz2"{,.asc})
+source_i686=(
+	"${pkgname}-${pkgver}-${_arch32}-${_language}.tar.bz2::${_urlbase}/${_arch32}/${_language}/thunderbird-${pkgver}.tar.bz2"
+	"${pkgname}-${pkgver}-${_arch32}-${_language}.tar.bz2.asc::${_urlbase}/${_arch32}/${_language}/thunderbird-${pkgver}.tar.bz2.asc"
+)
+source_x86_64=(
+	"${pkgname}-${pkgver}-${_arch64}-${_language}.tar.bz2::${_urlbase}/${_arch64}/${_language}/thunderbird-${pkgver}.tar.bz2"
+	"${pkgname}-${pkgver}-${_arch64}-${_language}.tar.bz2.asc::${_urlbase}/${_arch64}/${_language}/thunderbird-${pkgver}.tar.bz2.asc"
+)
 source=("${pkgname}.desktop")
 
 ### IMPORTANT #################################################################
