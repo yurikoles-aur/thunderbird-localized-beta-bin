@@ -1,6 +1,6 @@
 pkgbase = thunderbird-localized-beta-bin
 	pkgdesc = Standalone mail and news reader from mozilla.org — localized beta version
-	pkgver = 128.0b1
+	pkgver = 128.0b3
 	pkgrel = 1
 	url = https://www.mozilla.org/thunderbird
 	arch = i686
@@ -19,20 +19,20 @@ pkgbase = thunderbird-localized-beta-bin
 	optdepends = hunspell-en_us: Spell checking, American English
 	optdepends = libotr: OTR support for active one-to-one chats
 	optdepends = libnotify: Notification integration
-	provides = thunderbird=128.0b1
-	provides = thunderbird-beta=128.0b1
+	provides = thunderbird=128.0b3
+	provides = thunderbird-beta=128.0b3
 	conflicts = thunderbird-beta
 	conflicts = thunderbird-beta-bin
 	source = thunderbird-localized-beta-bin.desktop
 	validpgpkeys = 14F26682D0916CDD81E37B6D61B7B526D98F0353
 	sha256sums = 4890cc98cc21f3f2dbf4134627217b11167c73954a549fbe7ca0bbc8ca79b2d4
-	source_i686 = thunderbird-localized-beta-bin-128.0b1-linux-i686-en-US.tar.bz2::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b1/linux-i686/en-US/thunderbird-128.0b1.tar.bz2
-	source_i686 = thunderbird-localized-beta-bin-128.0b1-linux-i686-en-US.tar.bz2.asc::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b1/linux-i686/en-US/thunderbird-128.0b1.tar.bz2.asc
-	sha256sums_i686 = 1a1dee863575e1589de27b2203ea6f2aa1d4322fefb536d879fd686259da127f
+	source_i686 = thunderbird-localized-beta-bin-128.0b3-linux-i686-en-US.tar.bz2::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b3/linux-i686/en-US/thunderbird-128.0b3.tar.bz2
+	source_i686 = thunderbird-localized-beta-bin-128.0b3-linux-i686-en-US.tar.bz2.asc::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b3/linux-i686/en-US/thunderbird-128.0b3.tar.bz2.asc
+	sha256sums_i686 = da6e12678e16b29dc919e2f97933dc7e3bf40f3470a3081be65357d0e486bcd8
 	sha256sums_i686 = SKIP
-	source_x86_64 = thunderbird-localized-beta-bin-128.0b1-linux-x86_64-en-US.tar.bz2::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b1/linux-x86_64/en-US/thunderbird-128.0b1.tar.bz2
-	source_x86_64 = thunderbird-localized-beta-bin-128.0b1-linux-x86_64-en-US.tar.bz2.asc::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b1/linux-x86_64/en-US/thunderbird-128.0b1.tar.bz2.asc
-	sha256sums_x86_64 = a6309f1a572e3a4acb9b666a24a66c2f440843df79f791db038d7d42fa1eded5
+	source_x86_64 = thunderbird-localized-beta-bin-128.0b3-linux-x86_64-en-US.tar.bz2::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b3/linux-x86_64/en-US/thunderbird-128.0b3.tar.bz2
+	source_x86_64 = thunderbird-localized-beta-bin-128.0b3-linux-x86_64-en-US.tar.bz2.asc::https://ftp.mozilla.org/pub/thunderbird/releases/128.0b3/linux-x86_64/en-US/thunderbird-128.0b3.tar.bz2.asc
+	sha256sums_x86_64 = da880535eaff7dfada1dd3bf93fcc86cf719540333bea0fad76fde2b9c2a042b
 	sha256sums_x86_64 = SKIP
 
 pkgname = thunderbird-localized-beta-bin
