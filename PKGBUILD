@@ -1,36 +1,51 @@
 # Maintainer: Yurii Kolesnykov <root@yurikoles.com>
 # Based on thunderbird-beta-bin: Det <nimetonmaili g-mail>
-# Based on [extra]'s thunderbird: Levente Polyak <anthraxx[at]archlinux[dot]org>
-# Based on tor-browser: grufo <madmurphy333 AT gmail DOT com>
+# Based on extra/thunderbird: Levente Polyak <anthraxx[at]archlinux[dot]org>
+# Based on aur/tor-browser: grufo <madmurphy333 AT gmail DOT com>
 #
-# Before running makepkg, you must do this (as normal user):
+# Pull Requests are welcome here: https://github.com/yurikoles-aur/thunderbird-localized-beta-bin
 #
-#     gpg --auto-key-locate nodefault,wkd --locate-keys release@mozilla.com
+# Before running makepkg, you must do this once:
+#     $ gpg --auto-key-locate nodefault,wkd --locate-keys release@mozilla.com
 #
 
 pkgname=thunderbird-localized-beta-bin
 _pkgname=thunderbird-beta
-pkgver=128.0b3
+pkgver=129.0b5
 pkgrel=1
 pkgdesc='Standalone mail and news reader from mozilla.org — localized beta version'
-arch=('i686' 'x86_64')
-url="https://www.mozilla.org/thunderbird"
-license=('GPL' 'LGPL' 'MPL')
-depends=('dbus-glib'
-         'ffmpeg'
-         'gtk3'
-         'libpulse'
-         'libxt'
-         'mime-types'
-         'nss'
-         'ttf-font')
+arch=(
+  i686
+  x86_64
+)
+url='https://www.mozilla.org/thunderbird'
+license=(
+  'MPL-2.0'
+  'GPL-2.0-only'
+  'LGPL-2.1-only'
+)
+depends=(
+  dbus-glib
+  ffmpeg
+  gtk3
+  libpulse
+  libxt
+  mime-types
+  nss
+  ttf-font
+)
 optdepends=(
   'hunspell-en_us: Spell checking, American English'
   'libotr: OTR support for active one-to-one chats'
   'libnotify: Notification integration'
 )
-provides=("thunderbird=$pkgver" "thunderbird-beta=$pkgver")
-conflicts=("thunderbird-beta" "thunderbird-beta-bin")
+provides=(
+  thunderbird="${pkgver}"
+  thunderbird-beta="${pkgver}")
+conflicts=(
+  thunderbird-beta
+  thunderbird-beta-bin
+)
 
 _arch32='linux-i686'
 _arch64='linux-x86_64'
