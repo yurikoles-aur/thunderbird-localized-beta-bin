@@ -6,13 +6,13 @@
 # Pull Requests are welcome here: https://github.com/yurikoles-aur/thunderbird-localized-beta-bin
 #
 # Before running makepkg, you must do this once:
-#     $ gpg --auto-key-locate nodefault,wkd --locate-keys release@mozilla.com
+#     $ gpg --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353
 #
 
 pkgname=thunderbird-localized-beta-bin
 _pkgname=thunderbird-beta
 pkgver=130.0b1
-pkgrel=1
+pkgrel=2
 pkgdesc='Standalone mail and news reader from mozilla.org — localized beta version'
 arch=(
   i686
