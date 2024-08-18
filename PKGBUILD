@@ -11,8 +11,8 @@
 
 pkgname=thunderbird-localized-beta-bin
 _pkgname=thunderbird-beta
-pkgver=130.0b1
-pkgrel=2
+pkgver=130.0b2
+pkgrel=1
 pkgdesc='Standalone mail and news reader from mozilla.org — localized beta version'
 arch=(
   i686
@@ -101,7 +101,7 @@ source=("${pkgname}.desktop")
 # No need for `makepkg -g`: the following sha256sums¸don't need to be updated #
 # with each release, everything is done automatically! Leave them like this!  #
 ###############################################################################
-sha256sums=('4890cc98cc21f3f2dbf4134627217b11167c73954a549fbe7ca0bbc8ca79b2d4')
+sha256sums=('c4595bc8699538078445d23e98f9e6b81880ffd39356c77bc73bf6001810312b')
 sha256sums_i686=("$(_dist_checksum "${_arch32}")"
                  'SKIP')
 sha256sums_x86_64=("$(_dist_checksum "${_arch64}")"
