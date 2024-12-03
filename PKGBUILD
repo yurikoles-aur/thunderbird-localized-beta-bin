@@ -11,7 +11,7 @@
 
 pkgname=thunderbird-localized-beta-bin
 _pkgname=thunderbird-beta
-pkgver=134.0b1
+pkgver=134.0b2
 pkgrel=1
 pkgdesc='Standalone mail and news reader from mozilla.org — localized beta version'
 arch=(
